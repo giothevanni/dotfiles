@@ -1,0 +1,16 @@
+[alias]
+	ci = commit
+    co = checkout
+    st = status
+  	br = branch
+[user]
+	name = Giovanni Zunino
+	email = giovanni.zunino@chefkoch.de
+[core]
+	excludesfile = /Users/giovanni.zunino/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
